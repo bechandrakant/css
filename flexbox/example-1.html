@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example 1</title>
+  <style>
+    .container {
+      background-color: aqua;
+      border-radius: 5%;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .form-row input {
+      flex-grow: 1;
+    }
+
+    .form-row-2 {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .form-row-2 label {
+      flex: 1;
+    }
+
+    .form-row-2 input {
+      flex: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="">
+      <div class="form-row">
+        <label for="name">Name: </label>
+        <input type="text" id="name" />
+      </div>
+      <div class="form-row">
+        <label for="fav-color">Favorite color: </label>
+        <input type="text" id="fav-color" />
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <form action="">
+      <div class="form-row-2">
+        <label for="name">Name: </label>
+        <input type="text" id="name" />
+      </div>
+      <div class="form-row-2">
+        <label for="fav-color">Favorite color: </label>
+        <input type="text" id="fav-color" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

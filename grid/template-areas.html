@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Template areas</title>
+  <style>
+    .container {
+      display: grid;
+      height: 100%;
+      grid-template-rows: 40px 400px 40px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 4px;
+      grid-template-areas:
+        "h h h h h h h h h h h h h"
+        "m m m c c c c c c c c c c"
+        "f f f f f f f f f f f f f";
+      text-align: center;
+    }
+
+    .header {
+      background-color: aqua;
+      grid-area: h;
+    }
+
+    .menu {
+      background-color: lightcoral;
+      grid-area: m;
+    }
+
+    .content {
+      background-color: burlywood;
+      grid-area: c;
+    }
+
+    .footer {
+      background-color: orange;
+      grid-area: f;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>

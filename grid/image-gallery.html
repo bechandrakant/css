@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Gallery</title>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns: repeat(auto-fit, minmax (100px, 1fr));
+      grid-auto-rows: 100px;
+      grid-auto-flow: dense;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .vertical {
+      grid-row: span 2;
+    }
+
+    .horizontal {
+      grid-column: span 2;
+    }
+
+    .big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="vertical"><img src="images/tree.jpg" alt="Photo by Vlad Chețan from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div class="horizontal"><img src="images/buildings.jpg" alt="Photo by James Wheeler from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div class="big"><img src="images/butterfly.jpg" alt="Photo by Katie Burandt from Pexels"></div>
+    <div class="vertical"><img src="images/tree.jpg" alt="Photo by Vlad Chețan from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div class="horizontal"><img src="images/buildings.jpg" alt="Photo by James Wheeler from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div class="big"><img src="images/butterfly.jpg" alt="Photo by Katie Burandt from Pexels"></div>
+    <div class="vertical"><img src="images/tree.jpg" alt="Photo by Vlad Chețan from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div class="horizontal"><img src="images/buildings.jpg" alt="Photo by James Wheeler from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div><img src="images/sunflower.jpg" alt="Photo by icon0.com from Pexels"></div>
+    <div class="big"><img src="images/butterfly.jpg" alt="Photo by Katie Burandt from Pexels"></div>
+  </div>
+</body>
+
+</html>

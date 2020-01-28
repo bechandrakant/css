@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Feature box</title>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    .column-layout {
+      width: 90%;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+    }
+
+    .main-content {
+      flex: 2;
+      order: 2;
+      padding: 0 10px;
+      background-color: aliceblue;
+      text-align: justify;
+    }
+
+    .sidebar-1 {
+      flex: 1;
+      order: 1;
+      background-color: azure;
+    }
+
+    .sidebar-2 {
+      flex: 1;
+      order: 3;
+      background-color: antiquewhite;
+    }
+
+    .feature-container {
+      background-color: white;
+      margin: 20px;
+    }
+
+    .feature {
+      flex-basis: 30%;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .feature-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .feature-1 {
+      background-color: aqua;
+    }
+
+    .feature-2 {
+      background-color: aliceblue;
+    }
+
+    .feature-3 {
+      background-color: bisque;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="column-layout">
+    <div class="main-content">
+      <h1>Main content</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odit libero odio perferendis placeat
+        repellendus autem aperiam aspernatur. Natus, quis debitis sunt voluptatum hic aperiam pariatur quam cupiditate
+        nam eos!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam cumque accusantium eius vel,
+        facilis dolore labore quisquam quibusdam odit magni alias ut explicabo ipsam deserunt recusandae praesentium
+        temporibus distinctio.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique odit libero odio perferendis placeat
+        repellendus autem aperiam aspernatur. Natus, quis debitis sunt voluptatum hic aperiam pariatur quam cupiditate
+        nam eos!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magnam cumque accusantium eius vel,
+        facilis dolore labore quisquam quibusdam odit magni alias ut explicabo ipsam deserunt recusandae praesentium
+        temporibus distinctio.</p>
+    </div>
+    <div class="sidebar-1">
+      <h1>Sidebar One</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequatur, laborum voluptatibus sequi enim
+        nostrum, odit labore impedit ab doloremque nobis architecto illum amet illo, repudiandae necessitatibus
+        obcaecati iusto dolore?</p>
+    </div>
+    <div class="sidebar-2">
+      <h1>Sidebar Two</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequatur, laborum voluptatibus sequi enim
+        nostrum, odit labore impedit ab doloremque nobis architecto illum amet illo, repudiandae necessitatibus
+        obcaecati iusto dolore?</p>
+    </div>
+  </div>
+
+  <div class="feature-container">
+    <div class="feature feature-1">
+      <h1>Feature 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magni debitis facilis voluptate aliquam, quo
+        unde consequatur ad commodi accusantium eius, non repudiandae cum sint tempora provident amet, et dolores.</p>
+    </div>
+    <div class="feature feature-2">
+      <h1>Feature 2</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magni debitis facilis voluptate aliquam, quo
+        unde consequatur ad commodi accusantium eius, non repudiandae cum sint tempora provident amet, et dolores.</p>
+    </div>
+    <div class="feature feature-3">
+      <h1>Feature 3</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magni debitis facilis voluptate aliquam, quo
+        unde consequatur ad commodi accusantium eius, non repudiandae cum sint tempora provident amet, et dolores.</p>
+    </div>
+  </div>
+</body>
+
+</html>

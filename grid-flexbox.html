@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid Flexbox together</title>
+  <style>
+    body {
+      color: white;
+      text-transform: uppercase;
+      height: 600px;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: grid;
+      height: 80%;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 1fr 8fr 1fr;
+      grid-gap: 2px;
+    }
+
+    .header {
+      grid-column: 1 / -1;
+      background-color: red;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .header div {
+      padding: 10px;
+    }
+
+    .header div:nth-child(3) {
+      margin-left: auto;
+    }
+
+    .menu {
+      grid-column: 1 / 2;
+      background-color: brown;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      line-height: 1.5rem;
+    }
+
+    .content {
+      grid-column: 2 / -1;
+      background-color: green;
+      padding: 20px;
+    }
+
+    .footer {
+      grid-column: 1 / -1;
+      background-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div>Home</div>
+      <div>Search</div>
+      <div>Logout</div>
+    </div>
+    <div class="menu">
+      <div>Menu 1</div>
+      <div>Menu 2</div>
+      <div>Menu 3</div>
+      <div>Menu 4</div>
+      <div>Menu 5</div>
+      <div>Menu 6</div>
+    </div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>

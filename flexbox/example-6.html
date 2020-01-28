@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Magical columns</title>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    .container {
+      width: 80%;
+      background-color: blueviolet;
+      margin: auto;
+      display: flex;
+    }
+
+    .first {
+      background-color: white;
+      margin: auto;
+      padding: 10px;
+      flex: 2;
+    }
+
+    .second {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .second-a {
+      background-color: aqua;
+      flex: 1;
+    }
+
+    .second-b {
+      background-color: purple;
+      color: white;
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="first">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sapiente nesciunt quos doloribus nisi enim
+        totam sint tenetur asperiores natus quia reprehenderit quis molestiae assumenda harum eligendi similique, alias
+        amet?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident suscipit dolor tempora magni ipsam quaerat
+        quia. Modi qui, earum aspernatur nam architecto illum incidunt laboriosam, fuga tenetur provident, et pariatur.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur illum recusandae fugit omnis
+        mollitia harum maiores iusto vitae fugiat voluptatem minus architecto eum tenetur dolorem ad, nulla incidunt
+        soluta.</p>
+    </div>
+    <div class="second">
+      <div class="second-a">A</div>
+      <div class="second-b">B</div>
+    </div>
+  </div>
+
+</html>
